@@ -1,0 +1,682 @@
+body{
+    background-color: rgb(251, 251, 251);
+}
+a {
+  text-decoration: none;
+}
+#lui-playlist{
+    display: flex;
+   /*  justify-content: space-between; */
+    width: 1100px;
+    height: 1100px;
+    background: #fff;
+    border-radius: 25px;
+    border: 1px solid rgb(123, 121, 121);
+    box-shadow: 0px 0px 3px 3px (rgb(0, 0, 0, 0.3));
+}
+#lui-playlist l-panel{
+    display: block;
+    width: 200px;
+    height: 100%;
+    border-right: 1px solid #efefef;
+    position: relative;
+    border-top-left-radius: 25px;
+}
+#lui-playlist user-p{
+    display: flex;
+    align-items: center;
+    height: 80px;
+    width: calc(100% - 20px);
+    border-bottom: 1px solid #efefef;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+#lui-playlist user-p circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background: #DB8C84;
+    color: #fff;
+    font-size: 16px;
+    box-shadow: 2px 1px 8px #A24140;
+  }
+  #lui-playlist user-p user-wl {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 50px);
+    margin-left: 20px;
+    height: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: 'Rubik', sans-serif;
+    text-align: justify;
+    background: none;
+    line-height: 80%;
+  }
+  #lui-playlist user-p user-wl wel {
+    display: block;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+  #lui-playlist user-p user-wl user {
+    display: block;
+    font-family: 'rubik', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    padding-top: 2px;
+  }
+#lui-playlist l-panel u-menu{
+    width: calc(100% - 80px);
+    height: 160px;
+    display: block;
+    background: none;
+    margin-left: 0px;
+    margin-top: 30px;
+    text-align: justify;
+}
+#lui-playlist l-panel m-tit{
+    display: block;
+    text-transform: uppercase;
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #db8c84;
+    margin-bottom: 15px;
+}
+#lui-playlist l-panel m-block{
+    display: block;
+    width: 100%;
+    height: 30px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    padding-top: 4px;
+    padding-bottom: 0px;
+}
+#lui-playlist l-panel m-block i{
+    font-size: 14px;
+    padding-right: 5px;
+}
+#lui-playlist c-pl{
+    width: 105%;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-top: 1px solid rgba(255, 223, 219);
+    border-bottom: 1px solid rgba(255, 223, 219);
+    margin-top: 20px;
+    background-color: #db8c84;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#lui-playlist c-pl cic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    position: relative;
+    margin-left: 20px;
+    background: #db8c84;
+    border: 1px solid rgba(255,255,255,0.3);
+}
+#lui-playlist c-pl create{
+    position: relative;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Rubik', sans-serif;
+    font-size: 11px;
+    letter-spacing: 1px;
+    margin-left: 15px;
+}
+#lui-playlist c-pl:hover {
+    width: 115%;
+    height: 90px;
+    transition: all 1s;
+    cursor: pointer;
+   }
+   #lui-playlist c-pl:hover create{
+    margin-left: 35px;
+    
+   }
+
+
+#lui-playlist banner{
+    position: absolute;
+    width: 900px;
+    height: 200px;
+    background: url(./img/banner2.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    margin-left: 200px;
+    border-top-right-radius: 25px;
+}
+#lui-playlist banner b-title{
+    font-family: serif;
+    color: rgb(175, 169, 169);
+    text-shadow: 0px 0px 3px 3px rgba(0, 0, 0, .4);
+    font-size: 100px;
+    display: block;
+    height: 30px;
+    background: none;
+    line-height: 10%;
+    position: absolute;
+    width: 650px;
+    background: none;
+    text-align: right;
+    top: 75px;
+}
+#lui-playlist banner byl {
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(92, 67, 67);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 8px;
+    display: block;
+    background: rgba(255,255,255,0);
+    height: auto;
+    bottom: 55px;
+    width: 500px;
+    position: absolute;
+    text-align: right;  
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding-bottom: 5px;
+  }
+  #lui-playlist middle {
+    display: block;
+    width: 658px;
+    height: 100%;
+    background: none;
+  }
+  #lui-playlist middle search-b {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: flex-start;
+    width: calc(100% - 40px);
+    padding-left: 40px;
+    height: 90px;
+    border-bottom: 0px solid #efefef;
+    font-size: 13px;
+    color: rgb(17, 16, 16);
+    font-family: 'Rubik', sans-serif;
+    position: relative;
+    margin: 120px 300px 30px;
+  }  
+  #lui-playlist middle searchin {
+    display: block;
+     background: rgba(255,255,255,0.4);
+     padding: 15px;
+     border-radius: 10px;
+   }
+   #lui-playlist middle search-b i {
+    padding-right: 15px;
+  }
+  #lui-playlist middle m-sec {
+    width: 100%;
+    height: calc(100% - 200px);
+    display: block;
+    background: none;
+    position: relative;
+  }
+  #lui-playlist middle sec-1 {
+    display: flex;
+    width: calc(100% - 120px);
+    height: 160px; 
+    border: 1px solid #efefef;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  #lui-playlist middle re-book{
+    width: 160px;
+    height: 160px;
+    border-radius: 10px;
+    background: url(./img/harrypotter7.png);
+    background-size: contain;
+    background-position: center;
+    display: block;
+    background-repeat: no-repeat;
+  }
+  #lui-playlist middle re-con {
+    display: block;
+    width: 345px;
+    height: 100%;
+    background: none;
+    margin-left: 170px;
+  }
+  #lui-playlist middle re-cent {
+    width: 100%;
+    height: 20px;
+    display: block;
+    font-family: 'Rubik', sans-serif;
+    color: #d6d6d6;
+    text-align: left;
+    font-size: 14px;
+  }
+  #lui-playlist middle re-title {
+    width: 100%;
+    height: 20px;
+    display: block;
+    font-family: 'Rubik', sans-serif;
+    color: #ed9393;
+    text-align: left;
+    font-size: 20px;
+  }
+  #lui-playlist middle re-track {
+    width: 100%;
+    height: 100px;
+    background: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+    flex-wrap: wrap;
+  }
+  #lui-playlist middle play {
+    width: 12px;
+    height: 12px;
+    display: block;
+    border: 1px solid #efefef;
+    border-radius: 100%;
+    color: #ed9393;
+    font-size: 10px;
+    padding: 6px 5px 5px 8px;
+    transition: 1s;
+  }
+  #lui-playlist middle play i {
+    transition: 1s;
+  }
+  #lui-playlist middle re-track re-audio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    height: 25px;
+    margin-left: 10px;
+    position: relative;
+  }
+  #lui-playlist middle re-audio s-name {
+    display: block;
+    width: 100px;
+    height: 20px;
+    text-transform: uppercase;
+    text-align: justify;
+    font-size: 8px;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+    padding-top: 10px;
+    background: none;
+  }
+  #lui-playlist middle re-audio s-name b {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+  }
+  #lui-playlist middle re-audio s-track {
+    display: block;
+    width: 120px;
+    height: 5px;
+    background: #ebebeb;
+    border-radius: 15px;
+  }
+  #lui-playlist middle re-audio s-time { 
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+  }
+  #lui-playlist middle sec-2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: calc(100% - 120px);
+    height: 160px; 
+    border: 1px solid #efefef;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  #lui-playlist middle sec-2 sm-con {
+    width: 100px;
+    height: 100px;
+    background: none;
+    display: block;
+    margin-top: 10px;
+  }
+
+  #lui-playlist middle sec-2 sm-title {
+    text-transform: uppercase; 
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-family: 'Rubik', sans-serif;
+    background: rgba(237, 147, 147,0.2);
+    padding: 3px 5px;
+    border-radius: 5px;
+  }
+  
+  #lui-playlist middle sec-2 .sm-album {
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    position: relative;
+    overflow: hidden;
+    transition: 2s;
+    cursor: pointer;
+  }
+  
+  #lui-playlist middle sec-2 .sm-album .pic {
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    top: 0px;
+    transition: 1s;
+    cursor: pointer;
+  }
+  #lui-playlist middle sec-2 .sm-album:hover {
+    transform : scale(2)
+  }
+  
+  #lui-playlist middle sec-2 sm-recom,
+  #lui-playlist middle sec-3 faves-recom {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 40px;
+    background: none;
+    margin-top: 15px;
+    font-family: 'Open Sans', sans-serif;
+    border-top: 1px solid #efefef;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+  }
+  
+  #lui-playlist middle sec-2 sm-recom i ,
+  #lui-playlist middle sec-3 faves-recom i{
+    margin-right: 10px;
+    color: rgba(237, 147, 147,0.9);
+  }
+  
+  #lui-playlist middle sec-2 sm-recom b 
+  #lui-playlist middle sec-3 faves-recom b{
+    margin-right: 5px;
+    margin-left: 5px;
+    color: #222;
+    border-bottom: 3px solid rgba(237, 147, 147,0.2);
+    font-weight: 600;
+    margin-top: 2px;
+  }
+  
+  #lui-playlist middle sec-2 seall {
+    position: absolute;
+    right: 0px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    color: #d9d9d9;
+    margin-top: 3px;
+  }
+
+  #lui-playlist middle sec-3 {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% - 120px);
+    height: 350px; 
+    border: 1px solid #efefef;
+    margin-top: 5px;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  #lui-playlist middle sec-3 faves {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    height: 60%;
+    background: none;
+    position: relative;
+  }
+  #lui-playlist middle sec-3 fave {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    background: none;
+    align-items: center;
+  }
+  #lui-playlist middle sec-3 fave fimg {
+    width: 40px;
+    height: 40px;
+    display: block;
+    border-radius: 10px;
+    margin-right: -5px;
+  }
+  #lui-playlist middle sec-3 fave .f-img {
+    width: 50px;
+    height: 60px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: cover;
+  }
+
+ 
+
+  #lui-playlist middle sec-3 fave f-title {
+    font-family: 'Rubik', sans-serif;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    text-align: justify;
+    font-size: 9px;
+    width: 70px;
+    background: none;
+    transition: 1s;
+    margin-top: 15px;
+  }
+  #lui-playlist middle sec-3 fave f-artist {
+    display: block;
+    font-weight: 400;
+    margin-top: 2px;
+    color: #b4afaf;
+  }
+  #lui-playlist middle sec-3 fave f-time {
+    font-family: 'Rubik', sans-serif;
+    font-size: 10px;
+    margin-left: 4px;
+  }
+  #lui-playlist middle sec-3 fave i {
+    font-size: 8px;
+    color: rgba(237, 147, 147,0.7);
+    padding-right: 15px;
+  }
+  #lui-playlist middle f-title:hover {
+    color:rgba(237, 147, 147,0.7);
+    cursor: pointer;
+    transition: 1s; 
+  }
+  #lui-playlist r-panel {
+    width: 240px;
+    height: 100%;
+    display: block;
+    background: none;
+    border-left: 1px solid #efefef; 
+    position: relative;
+  }
+
+  #lui-playlist r-top {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255,255,255,0.3);
+    border-top-right-radius: 20px;
+    position: relative;
+  }
+  #lui-playlist r-circ {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    border-radius: 100%;
+    padding: 10px;
+  }
+  
+  #lui-playlist r-circ r-img {
+    width: 100px;
+    height: 100px;
+    display: block;
+    background: url(./img/joha.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 100%;
+  }
+  #lui-playlist r-noti {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    background: #fff;
+    padding: 5px;
+    position: absolute;
+    bottom: 30px;
+    right: 40px;
+    color: #DE8A82;
+    font-size: 13px;
+    transform: rotate(5deg);
+  }
+  #lui-playlist r-noti:hover{
+    box-shadow: #00a2ff;
+  }
+  
+  #lui-playlist r-noc {
+    width: calc(100% - 40px);
+    height: 175px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: none;
+    padding: 20px;
+    border-bottom: 1px solid #efefef;
+  }
+  
+  #lui-playlist r-noc one {
+    width: calc(100% - 12px);
+    height: 45px;
+    border: 1px solid #efefef;
+    display: flex;
+    border-radius: 15px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    font-family: 'Rubik', sans-serif;
+    padding: 0px 8px 0px 5px;
+    text-align: center;
+    margin: 5px 0;
+  }
+  
+  #lui-playlist r-noc one n-user {
+   line-height: 80%; 
+  }
+  
+  #lui-playlist r-noc one tim {
+    font-size: 10px;
+  }
+  
+  #lui-playlist r-noc one i {
+    background: rgba(237, 147, 147,0.2);
+    padding: 8px;
+    border-radius: 100%;
+    font-size: 11px;
+    color: rgba(237, 147, 147,0.9);
+  }
+  
+  #lui-playlist r-panel friends {
+    width: calc(100% - 40px);
+    height: 155px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    background: none;
+    padding: 20px;
+    border-bottom: 1px solid #efefef;
+  }
+  
+  #lui-playlist r-panel friends frien {
+    display: block;
+    width: 100%;
+    height: auto;
+    font-family: 'Rubik', sans-serif; 
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 10px;
+    color: rgba(237, 147, 147,1);
+  }
+  
+  #lui-playlist r-panel friends frien-c {
+    width: 45px;
+    height: 45px;
+    padding: 5px;
+    background: rgba(237, 147, 147,0.2);
+    border-radius: 100%;
+  }
+  
+  #lui-playlist r-panel friends frien-c .f-img {
+    width: 43px;
+    height: 43px;
+    border-radius: 100%;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #fff;
+  }
+  #lui-playlist r-panel friends frien-c:hover  .f-img{
+  transform : scale(1.5)
+  }
+
+  #ripple-effect-list,
+#ripple-effect-info {
+  position: absolute;
+  top: 2%;
+  right: 4%;
+  height: 4em;
+  width: 4em;
+  background: var(--bg-color);
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  z-index: 6;
+  transition-delay: 0.2s;
+  transform: scale(0);
+}
+#ripple-effect-list.active,
+#ripple-effect-info.active {
+  transform: scale(30);
+}
+
+#ripple-effect-info {
+  left: 4%;
+}
+#lui-playlist n-play{
+  width: calc(100%-40px);
+  height: 345px;
+  display: block;
+  background: none;
+  padding: 20px;
+  position: relative;
+
+}
